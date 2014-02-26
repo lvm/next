@@ -1,7 +1,9 @@
 next
 ====
 
-Find the *next* word  
+Find the *next* word.  
+It's a pretty simple and basic *game* made out of boredom sometime in 2010, where we must find the "next" word, to click it and look for it again until the time is over.
+
 
 
 
