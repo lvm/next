@@ -1,3 +1,2 @@
 the rules are plain and simple:<br/>Just find the next word before the time is over.<br/><br/>Choose the difficulty:<br/>
 <!-- <a class="k" href="#okay">Fine.</a> -->
-
