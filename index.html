@@ -1,0 +1,67 @@
+          <!DOCTYPE html><html><head><title> -- NEXT -- </title><script 
+        type="text/javascript" src="//code.jquery.com/jquery-2.1.0.min.js">
+      </script><script type="text/javascript">/*set*/window.clicks={made:0}
+    /*so far*/;/*set*/window.level={ /*pwnp|*/dumb:{'timer':240,
+'file':'micro.txt'},/*like a sunday morning, im*/easy:{'timer':
+240,'file':'mini.txt'},/*a*/normal:{'timer':180,'file':
+     'mini.txt'},/*she said it was*/hard:{'timer':
+     180,'file':'lorem.txt'},/*ur*/insane:{'timer':60,'file':
+           'lorem.txt'},/*the*/chosen:'',/*one*/ };var t;/*ea*/
+             /*set*/window.ison=false;/*function showmust(){ continue;
+                   }*/function goon(){/*lol. im in ur gamez stealin
+                  ur secondz*/if((parseInt($('.sys').text())==1) &&
+               ($('.sys').length>0)){$('.sys').remove();halt()
+          /*hammerzeit*/;/*set*/window.ison=false;timesup();
+      return false}else{$('.sys').text(parseInt($('.sys').text())
+    -1);t=setTimeout("goon()",1000);}};function timer(){if(window.ison){
+   /*show must*/goon();}};function halt(){/*set*/window.ison=false;clearTimeout(t);
+    };function setclocks(){$('<span></span>').appendTo('body');$('span:last')
+
+              .addClass('sys sh').text('sys').text(
+        window.level[window.level.chosen]['timer']);};
+    function timesup(){$("a").die("click");$("a[href='#again']")
+  .live('click',function(){             window.location.reload();});
+$('<span></span>')                           .appendTo('body');$('span:last')
+.addClass('halp').css(                 {'left':(($(window).width()-300)/
+2)+"px",}).html('<p>time is up!<br/>only '+window.clicks.made+' clicks?'+
+'</p><p><a class="k" href="#again"">Again?</a></p>');};function hayder(){
+  $.get("next/rules.txt",function(data){$('<span></span>').appendTo(
+    'body');$('span:last').addClass('halp').css({'left':(($(window)
+             .width()-300)/2)+"px",}).html(data);for(dif in
+
+    window.level){if(parseInt(window.level[dif]['timer'])>0){
+      $('.halp').append('<p><a class="k" href="#level" rel="'+dif
+                                +'">'+           dif+'</a></p>');}
+                         }});};function          load_content(){
+                      setclocks();$.get("next/"+window.level[
+                window.level.chosen     ]['file'],function(data){
+          window.lorem.text=             data.replace(/^ /g,'')
+      .replace(/ $/g,'');                   window.lorem.list=
+    window.lorem.text.split(' ');
+
+  /*and*/another_round();/*of words, please*/ }); };function pickrand(){
+  /*om word*/var randy=window.lorem.list[Math.floor(Math.random()*
+  window.lorem.list.length)];if( typeof(randy)==undefined ){/*then*/
+  pickrand();/*om word*/}                       return {'word':randy
+   .replace('\n',''),                         'replace':"<a href='"
+      +"#next'>next</a>"};};function another_round(){/*of words,
+          please*/ var word=pickrand();/*om word*/var text=
+             window.lorem.text;$('div').html(text
+              .replace(word.word,word.replace)
+                 );/*set*/window.ison=true;
+                          /*and start the
+
+
+
+     */timer();}                 $(window).load(function(){/*o*/hayder();
+   window.lorem/*            .ipsum*/={'text':"",'list':[]};$("a[href='#level']")
+    .live('click'                ,function(){window.level.chosen=$(this).attr(
+
+   'rel');$('.halp')             .html('Let\'s start then!<br/><a class="k" '+
+  'href="#okay">Fine'+        '.</a>');});$("a[href='#okay']").live('click',function(){
+    /*and please,*/               load_content();$('.halp').remove();/*and set*/
+
+
+
+window.ison=true;/*activate*/timer();});$("a[href='#next']").live('click',function(){/*amount.of.*/window.clicks.made/*are*/=/*to*/window.clicks.made/*plus*/+/*one*/1;/*also*/halt();/*and*/another_round();});});</script><style>p{margin:10px}.k,body{background:#fff;color:#000;padding:5px}.k{padding:2px}.sh{-webkit-box-shadow:5px5px 0px #333;-moz-box-shadow:5px 5px 0px #333;box-shadow:5px 5px 0px #333}.sys{position:absolute;top:5px;width:50px;right:10px;background:#C64242;color:#fff;font-size:16pt;height:30px;text-align:right}.halp{position:absolute;width:300px;height:300px;text-align:center;background:#666;color:#fff;top:100px;-webkit-box-shadow:5px 5px 0px #333;-moz-box-shadow:5px 5px 0px #333;box-shadow:5px 5px 0px #333}a{color:#f00;font-weight:normal;text-decoration:none}@font-face{font-family:P0T-NOoDLE;src:url(fonts/topazplus120010.eot)}@font-face{font-family:P0T-NOoDLE;src:url(fonts/topazplus120010.ttf)  format("truetype")}span,div,h1{font-family:P0T-NOoDLE;font-size:10pt;line-height:18px;margin:0;padding:0}h1{text-align:center;font-size:20pt;line-height:18pt}.wr{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}</style></head><body><h1>find the *next* word</h1><div class="wr"></div></body><!-- mauro en cacavoladora punto org @ 07/2010 --></html>
+
